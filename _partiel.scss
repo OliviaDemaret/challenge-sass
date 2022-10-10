@@ -1,0 +1,20 @@
+$font-grey: #6b717f;
+$background-color: #fff;
+$border-grey: #8c8c8c;
+$border-dark-grey: #6b717f;
+$background-black: #000;
+$h-color: #bf4080;
+$success-color: green;
+$error: red;
+$warning-color: orange;
+$padding: 16px;
+%box {
+  border: 1px solid $border-grey;
+  padding: 16px;
+  color: $background-color;
+}
+@mixin border-shadow($mixin) {
+  -webkit-box-shadow: 10px 10px 15px -4px $mixin;
+  -moz-box-shadow: 10px 10px 15px -4px $mixin;
+  box-shadow: 10px 10px 15px -4px $mixin;
+}
